@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageButton
+        android:id="@+id/btn_power"
+        style="@style/button_wrap"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@android:drawable/ic_lock_power_off"
+        />
+
+    <ImageButton
+        android:id="@+id/btn_setting"
+        style="@style/button_wrap"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:src="@android:drawable/ic_menu_preferences"
+        />
+
+    <Button
+        android:id="@+id/btn_radio"
+        style="@style/button_wrap"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="@string/btn_title_radio"
+        />
+
+
+    <Button
+        android:id="@+id/btn_geetmala"
+        style="@style/button_wrap"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/btn_title_geetmala"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btn_geetmala"
+        android:orientation="horizontal"
+        >
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/cmd_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="Command"
+            />
+
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="send"
+            />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/btn_send"
+            android:layout_toRightOf="@+id/cmd_text"
+            />
+
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/btn_play"
+        style="@style/button_wrap"
+        android:layout_centerInParent="true"
+        android:src="@android:drawable/ic_media_play"
+
+        />
+
+    <ImageButton
+        android:id="@+id/btn_next"
+        style="@style/button_wrap"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/btn_play"
+        android:src="@android:drawable/ic_media_next"
+
+        />
+
+    <ImageButton
+        android:id="@+id/btn_prev"
+        style="@style/button_wrap"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/btn_play"
+        android:src="@android:drawable/ic_media_previous"
+        />
+
+    <ImageButton
+        android:id="@+id/btn_vol_up"
+        style="@style/button_wrap"
+        android:layout_above="@id/btn_play"
+        android:layout_centerHorizontal="true"
+        android:src="@android:drawable/arrow_up_float"/>
+
+    <ImageButton
+        android:id="@+id/btn_vol_down"
+        style="@style/button_wrap"
+        android:layout_below="@id/btn_play"
+        android:layout_centerHorizontal="true"
+        android:src="@android:drawable/arrow_down_float"/>
+
+
+</RelativeLayout>
